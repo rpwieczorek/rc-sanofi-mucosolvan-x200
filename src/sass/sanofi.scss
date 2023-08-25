@@ -99,7 +99,6 @@ $text-black: #000;
   }
 
   .es-kv {
-    min-height: 370px;
     &__container {
       padding: 0 !important;
     }
@@ -111,7 +110,7 @@ $text-black: #000;
     }
     &__title {
       position: absolute;
-      top: 30px;
+      top: 18px;
       left: 30px;
     }
     &__text{
@@ -144,63 +143,54 @@ $text-black: #000;
           background-color: $main-color;
           transform: rotate(-1.5deg);
           line-height: 1.3;
-          margin-left: 20px;
+          margin-left: 100px;
       }
     }
     &__packshot {
-      width: 35%;
+      width: 46%;
       position: absolute;
-      bottom: -27%;
-      right: 5%;
-    }
-    &__background {
-      width: 100%;
-      position: absolute;
-      bottom: -27%;
+      bottom: 0;
       right: 0;
     }
     &__subtitle {
       position: absolute;
-      bottom:-27%;
-      left: 15%;
+      bottom: 0;
+      left: 10%;
     }
     &__text1{
       color: $text;
       width: max-content;
-      padding: 0 10px !important;
+      padding-right: 10px !important;
       text-transform: uppercase;
       font-weight: 900;
       transform: rotate(-3deg);
       margin-bottom: 10px !important;
-      font-size: 15px;
+      font-size: 25px;
       border-radius: 5px;
       font-family: $title;
       line-height: 0.8;
-      & sup {
-        font-size: 8px !important;
-        position: relative;
-        top: -4px;
-      }
+      
       & p {
-          // margin: 10px;
           letter-spacing: 1px;
       }
       &--red{
           background-color: $secondary-color;
-          font-size: 12px;
-          margin: 0;
+          font-size: 18px;
+          padding-left: 25px;
           line-height: 1.3;
       }
       &--middle{
-        line-height: 0.5;
+        line-height: 0.7;
         margin-left: 15px;
+        transform: rotate(-1.5deg);
       }
-      &--blue{
-          background-color: $main-color;
-          transform: rotate(-1.5deg);
-          font-size: 12px;
-          line-height: 1.3;
-          margin-left: 40px;
+      &--number {
+        position: absolute;
+        top: -11%;
+        left: -6%;
+        transform: translateY(-50%);
+        font-size: 38px;
+        transform: rotate(-1.5deg);
       }
     }
   }
@@ -663,13 +653,32 @@ $text-black: #000;
 
 @media (min-width:400px) {
   .es-kv {
-    min-height: 415px !important;
     &__text{
-      font-size: 27px !important;
+      font-size: 31px !important;
       &--red{
-          font-size: 22px !important;
+          font-size: 26px !important;
       }
     }
+    &__subtitle {
+      bottom: 10px !important;
+      left: 20px !important;
+    }
+    &__text1{
+      font-size: 28px !important;
+      line-height: 0.8;
+      &--red{
+          font-size: 18px !important;
+          padding-left: 25px !important;
+      }
+      &--middle{
+        margin-left: 40px !important;
+      }
+      &--number {
+        top: -12%;
+        left: -19% !important;
+        font-size: 40px !important;
+      }
+    } 
   } 
   .es-why {
     &__text {
@@ -689,45 +698,14 @@ $text-black: #000;
 }
 @media (min-width:440px) {
   .es-kv {
-    min-height: 470px !important;
     &__text{
-      font-size: 31px !important;
+      font-size: 37px !important;
       &--red{
-          font-size: 26px  !important;
-          line-height: 1.3;
-      }
-      &--middle{
-        line-height: 0.8;
-        margin-left: 5px;
-      }
-      &--blue{
-          line-height: 1.3;
-          margin-left: 20px;
+          font-size: 30px  !important;
       }
     }
-    &__subtitle {
-      bottom: -27% !important;
-      left: 10% !important;
-    }
-    &__text1{
-      font-size: 20px  !important;
-      line-height: 0.8;
-      & sup {
-        font-size: 10px !important;
-        top: -10px !important;
-      }
-      &--red{
-          font-size: 15px  !important;
-          line-height: 1.3;
-      }
-      &--middle{
-        line-height: 0.5;
-      }
-      &--blue{
-          font-size: 15px;
-          line-height: 1.3;
-      }
-    }
+
+
   } 
   .es-why {
     &__text {
@@ -747,13 +725,32 @@ $text-black: #000;
 }
 @media (min-width:500px) {
   .es-kv {
-    min-height: 510px !important;
     &__text{
-      font-size: 39px !important;
+      font-size: 50px !important;
       &--red{
-          font-size: 34px !important;
+          font-size: 38px !important;
       }
     }
+    &__subtitle {
+      bottom: 15px !important;
+      left: 20px !important;
+    }
+    &__text1{
+      font-size: 33px !important;
+      line-height: 0.8;
+      &--red{
+          font-size: 22px !important;
+          padding-left: 35px !important;
+      }
+      &--middle{
+        margin-left: 40px !important;
+      }
+      &--number {
+        top: -12%;
+        left: -16% !important;
+        font-size: 55px !important;
+      }
+    } 
   }
   .es-why {
     &__text {
@@ -773,10 +770,10 @@ $text-black: #000;
 }
 @media (min-width:540px) {
   .es-kv {
-    min-height: 570px !important;
-    &__subtitle {
-      bottom: -24% !important;
-      left: 10% !important;
+    &__text {
+      &--blue {
+        margin-left: 120px !important;
+      }
     }
   } 
   .es-why {
@@ -810,19 +807,18 @@ $text-black: #000;
 }
 @media (min-width:576px) {
   .es-kv {
-    min-height: 500px !important;
-    &__packshot {
-      width: 35% !important;
-      bottom: -30% !important;
-      right: 5%!important;
+    &__title {
+      top: 25% !important;
+      left: 15px !important;
     }
-    &__background {
-      bottom: -30% !important;
-      right: 0 !important;
-    }
-    &__subtitle {
-      bottom:-29% !important;
-      left: 15% !important;
+    &__text{
+      font-size: 33px !important;
+      &--red{
+          font-size: 25px !important;
+      }
+      &--blue {
+        margin-left: 20px !important;
+      }
     }
     &__mobile {
       display: none !important;
@@ -831,28 +827,25 @@ $text-black: #000;
       display: block !important;
     }
     &__subtitle {
-      bottom: -29% !important;
-      left: 10% !important;
+      bottom: 32px !important;
+      left: 26px !important;
     }
     &__text1{
-      font-size: 20px  !important;
+      font-size: 25px !important;
       line-height: 0.8;
-      & sup {
-        font-size: 10px !important;
-        top: -10px !important;
-      }
       &--red{
-          font-size: 15px  !important;
-          line-height: 1.3;
+          font-size: 20px !important;
+          padding-left: 30px !important;
       }
       &--middle{
-        line-height: 0.5;
+        margin-left: 40px !important;
       }
-      &--blue{
-          font-size: 15px;
-          line-height: 1.3;
+      &--number {
+        top: -12%;
+        left: -17% !important;
+        font-size: 50px !important;
       }
-    }
+    }  
   } 
   .es-description {
     &__text {
@@ -883,46 +876,34 @@ $text-black: #000;
 }
 @media (min-width:768px) {
   .es-kv {
-    min-height: 600px !important;
     &__text{
-      font-size: 60px !important;
+      font-size: 45px !important;
       &--red{
-          font-size: 45px !important;
-          margin: 0;
-          line-height: 1.3;
-      }
-      &--middle{
-        line-height: 0.8;
-        margin-left: 5px;
-      }
-      &--blue{
-          line-height: 1.3;
-          margin-left: 20px;
+          font-size: 36px !important;
       }
     }
     &__subtitle {
-      bottom: -26% !important;
-      left: 15% !important;
+      bottom: 32px !important;
+      left: 26px !important;
     }
     &__text1{
-      font-size: 25px  !important;
+      font-size: 40px !important;
       line-height: 0.8;
-      & sup {
-        font-size: 10px !important;
-        top: -14px !important;
-      }
       &--red{
-          font-size: 20px  !important;
-          line-height: 1.3;
+          font-size: 32px !important;
+          padding-left: 45px !important;
       }
       &--middle{
-        line-height: 0.5;
+        margin-left: 40px !important;
       }
-      &--blue{
-          font-size: 20px;
-          line-height: 1.3;
-      }
+      &--number {
+        top: -12%;
+        left: -11% !important;
+        font-size: 75px !important;
+      }      
+
     }
+
   } 
   .es-why {
     &__text {
@@ -951,46 +932,31 @@ $text-black: #000;
     display: none !important;
   }
   .es-kv {
-    &__title {
-      top: 30px;
-      left: 30px;
-    }
-
-    &__packshot {
-      width: 280px  !important;
-      bottom: 0  !important;
-      right: 5%  !important;
-    }
-    &__background {
-      bottom: 0 !important;
-      right: 0  !important;
+    &__text{
+      font-size: 62px !important;
+      &--red{
+          font-size: 50px !important;
+      }
     }
     &__subtitle {
-      bottom: 25px !important;
-      left: 80px !important;
+      bottom: 67px !important;
+      left: 33px !important;
     }
     &__text1{
-      font-size: 45px !important;
+      font-size: 50px !important;
       line-height: 0.8;
-      & sup {
-        font-size: 12px !important;
-        position: relative;
-        top: -20px !important;
-      }
       &--red{
-          font-size: 35px !important;
-          margin: 0;
-          line-height: 1.3;
+          font-size: 38px !important;
+          padding-left: 65px !important;
       }
       &--middle{
-        line-height: 0.5;
-        margin-left: 60px !important;
+        margin-left: 65px !important;
       }
-      &--blue{
-          font-size: 35px !important;
-          line-height: 1.3;
-          margin-left: 120px !important;
-      }
+      &--number {
+        top: -13% !important;
+        left: -15% !important;
+        font-size: 98px !important;
+      }      
     }
   }
   .es-why {
