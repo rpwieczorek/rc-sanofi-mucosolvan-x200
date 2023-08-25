@@ -212,6 +212,12 @@ $text-black: #000;
       color: $text-black !important;
       max-width: 210px !important;
     }
+    &__mobileDdivider {
+      display: none;
+    }
+    &__divider {
+      display: none;
+    }
   }
   .es-description {
     background-image: url('../images/description-bg.png');
@@ -696,6 +702,13 @@ $text-black: #000;
     }
   }  
 }
+@media (min-width:424px) {
+  .es-features {
+    &__mobileDdivider {
+      display: block !important;
+    }
+  }
+}
 @media (min-width:440px) {
   .es-kv {
     &__text{
@@ -905,6 +918,11 @@ $text-black: #000;
     }
 
   } 
+  .es-features {
+    &__divider {
+      display: block !important;
+    }
+  } 
   .es-why {
     &__text {
       &--1 {
@@ -959,6 +977,11 @@ $text-black: #000;
       }      
     }
   }
+  .es-features {
+    &__divider {
+      display: none !important;
+    }
+  } 
   .es-why {
     &__text {
       &--1 {
